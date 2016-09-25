@@ -1,0 +1,32 @@
+{
+  "name": "react-native-demo-phantom",
+  "version": "1.0.0",
+  "description": "如何运行: 1. npm install 加载node_modules 2. 终端允许本地服务： `node node_modules/react-native/local-cli/cli.js start --root ／User.../ReactNative/` 3.开启XCode（使用了cocoapods）理论上支持安卓。未使用任何iOS专用控件。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.huantengsmart.com:mobile/phantom-react-native.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "minimatch": "^3.0.2",
+    "onsenui": "^2.0.0-rc.18",
+    "react": "^15.3.1",
+    "react-native": "^0.33.0",
+    "react-onsenui": "^0.7.7",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "react-native-tabs": "^1.0.9",
+    "react-refresh-control": "^2.0.5"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.3.1"
+  }
+}
