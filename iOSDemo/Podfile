@@ -1,0 +1,30 @@
+platform :ios, '7.0'
+
+xcodeproj 'ReactNativeDemo.xcodeproj'
+inhibit_all_warnings!
+
+def import_model_pods
+    pod 'AFNetworking','2.6.0'
+    pod 'JSONModel', '1.1.0'
+end
+
+def import_controller_pods
+    pod 'Masonry', '0.6.0'
+    pod 'MBProgressHUD', '0.9'
+    pod 'pop', '1.0.8'
+    
+    pod 'React', :path => '/Users/PhantomDev/Documents/React/iOSDemo/ReactNative/node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTText',
+    'RCTWebSocket',
+    'RCTSettings',
+    'ART',
+    ]    
+end
+
+target 'ReactNativeDemo' do
+    import_controller_pods
+    import_model_pods
+end
